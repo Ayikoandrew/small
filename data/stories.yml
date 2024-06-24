@@ -1,0 +1,239 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: ask exam warning
+  steps:
+  - intent: intent_exam_warning
+  - action: utter_intent_exam_warning
+
+- story: exam consequence
+  steps:
+  - intent: intent_exam_consequence
+  - action: utter_intent_exam_consequence
+
+- story: exam cheating definition
+  steps:
+  - intent: intent_exam_cheating_definition
+  - action: utter_intent_exam_cheating_definition
+
+- story: exam cheating forms
+  steps:
+  - intent: intent_exam_cheating_forms
+  - action: utter_intent_exam_cheating_forms
+
+- story: exam notes policy
+  steps:
+  - intent: intent_exam_notes_policy
+  - action: utter_intent_exam_notes_policy
+
+- story: exam electronic device policy
+  steps:
+  - intent: intent_exam_electronic_device_policy
+  - action: utter_intent_exam_electronic_device_policy
+
+- story: exam copying consequence
+  steps:
+  - intent: intent_exam_copying_consequence
+  - action: utter_intent_exam_copying_consequence
+
+- story: exam aiding candidates
+  steps:
+  - intent: intent_exam_aiding_candidates
+  - action: utter_intent_exam_aiding_candidates
+
+- story: exam cheating punishment
+  steps:
+  - intent: intent_exam_cheating_punishment
+  - action: utter_intent_exam_cheating_punishment
+
+- story: cheating serious offence reason
+  steps:
+  - intent: intent_cheating_serious_offence_reason
+  - action: utter_intent_cheating_serious_offence_reason
+
+- story: course credit earning
+  steps:
+  - intent: intent_course_credit_earning
+  - action: utter_intent_course_credit_earning
+
+- story: pass mark undergraduate
+  steps:
+  - intent: intent_pass_mark_undergraduate
+  - action: utter_intent_pass_mark_undergraduate
+
+- story: failed assessment credit
+  steps:
+  - intent: intent_failed_assessment_credit
+  - action: utter_intent_failed_assessment_credit
+
+- story: course credit determination
+  steps:
+  - intent: intent_course_credit_determination
+  - action: utter_intent_course_credit_determination
+
+- story: graduation credit requirement
+  steps:
+  - intent: intent_graduation_credit_requirement
+  - action: utter_intent_graduation_credit_requirement
+
+- story: fail course consequence
+  steps:
+  - intent: intent_fail_course_consequence
+  - action: utter_intent_fail_course_consequence
+
+- story: course performance assessment
+  steps:
+  - intent: intent_course_performance_assessment
+  - action: utter_intent_course_performance_assessment
+
+- story: missed exam procedure
+  steps:
+  - intent: intent_missed_exam_procedure
+  - action: utter_intent_missed_exam_procedure
+
+- story: exam notes policy
+  steps:
+  - intent: intent_exam_notes_policy
+  - action: utter_intent_exam_notes_policy
+
+- story: deferred exam eligibility
+  steps:
+  - intent: intent_deferred_exam_eligibility
+  - action: utter_intent_deferred_exam_eligibility
+
+- story: exam postponement application
+  steps:
+  - intent: intent_exam_postponement_application
+  - action: utter_intent_exam_postponement_application
+
+- story: postponement application timing
+  steps:
+  - intent: intent_exam_postponement_application_timing
+  - action: utter_intent_exam_postponement_application_timing
+
+- story: illness documentation
+  steps:
+  - intent: intent_exam_postponement_illness_documentation
+  - action: utter_intent_exam_postponement_illness_documentation
+
+- story: other documentation
+  steps:
+  - intent: intent_exam_postponement_other_documentation
+  - action: utter_intent_exam_postponement_other_documentation
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: exam approval without regular attendance
+  steps:
+  - intent: intent_postponed_exam_approval_without_regular_attendance
+  - action: utter_intent_postponed_exam_approval_without_regular_attendance
+
+- story: exam approval notification
+  steps:
+  - intent: intent_postponed_exam_approval_notification
+  - action: utter_intent_postponed_exam_approval_notification
+
+- story: exam retake status
+  steps:
+  - intent: intent_postponed_exam_retake_status
+  - action: utter_intent_postponed_exam_retake_status
+
+- story: missed exam fee
+  steps:
+  - intent: intent_missed_exam_fee
+  - action: utter_intent_missed_exam_fee
+
+- story: absent exam no reason consequence
+  steps:
+  - intent: intent_absent_exam_no_reason_consequence
+  - action: utter_intent_absent_exam_no_reason_consequence
+
+- story: fail grade CGPA impact
+  steps:
+  - intent: intent_fail_grade_CGPA_impact
+  - action: utter_intent_fail_grade_CGPA_impact
+
+- story: justifiable absence reason
+  steps:
+  - intent: intent_justifiable_absence_reason
+  - action: utter_intent_justifiable_absence_reason
+
+- story: abs grade CGPA impact
+  steps:
+  - intent: intent_abs_grade_CGPA_impact
+  - action: utter_intent_abs_grade_CGPA_impact
+
+- story: exam registration requirement
+  steps:
+  - intent: intent_exam_registration_requirement
+  - action: utter_intent_exam_registration_requirement
+
+- story: unpaid fees consequence
+  steps:
+  - intent: intent_unpaid_fees_consequence
+  - action: utter_intent_unpaid_fees_consequence
+
+- story: partial registration exam participation
+  steps:
+  - intent: intent_partial_registration_exam_participation
+  - action: utter_intent_partial_registration_exam_participation
+
+- story: unregistered exam consequence
+  steps:
+  - intent: intent_unregistered_exam_consequence
+  - action: utter_intent_unregistered_exam_consequence
+
+- story: exam worth without registration
+  steps:
+  - intent: intent_exam_worth_without_registration
+  - action: utter_intent_exam_worth_without_registration
+
+- story: course completion requirements
+  steps:
+  - intent: intent_course_completion_requirements
+  - action: utter_intent_course_completion_requirements
+
+- story: maximum retake courses
+  steps:
+  - intent: intent_maximum_retake_courses
+  - action: utter_intent_maximum_retake_courses
+
+- story: course registration prioritization
+  steps:
+  - intent: intent_course_registration_prioritization
+  - action: utter_intent_course_registration_prioritization
+
+- story: final year retake after results
+  steps:
+  - intent: intent_final_year_retake_after_results
+  - action: utter_intent_final_year_retake_after_results
+
+- story: academic transcript retake indication
+  steps:
+  - intent: intent_academic_transcript_retake_indication
+  - action: utter_intent_academic_transcript_retake_indication
+
+- story: exam results publication
+  steps:
+  - intent: intent_exam_results_publication
+  - action: utter_intent_exam_results_publication
+
+- story: access exam results
+  steps:
+  - intent: intent_access_exam_results
+  - action: utter_intent_access_exam_results
+
+- story: exam results access issue
+  steps:
+  - intent: intent_exam_results_access_issue
+  - action: utter_intent_exam_results_access_issue
+

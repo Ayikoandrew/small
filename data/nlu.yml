@@ -1,0 +1,1532 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+
+
+- intent: intent_exam_warning
+  examples: |
+    - What should students be aware of concerning examination conduct?
+    - Are there any warnings for students about how to behave during exams?
+    - What advice is provided to students regarding exam rules?
+    - What alerts are issued to students about examination practices?
+    - What should students know about exam guidelines?
+    - What warnings are given to students about test-taking practices?
+    - What are students advised to avoid during exams?
+    - What instructions are given to students regarding exam protocols?
+    - What cautionary advice is provided to students about examinations?
+    - What reminders are given to students about exam conduct?
+    - What warnings should students heed regarding exams?
+    - What alerts should students be aware of regarding exam behavior?
+    - What guidance is given to students about proper examination practices?
+    - What should students be warned about in relation to exam practices?
+    - What warnings are issued to students about exam etiquette?
+    - What are the warnings to students about examination rules?
+    - What should students be cautious about during exams?
+    - What important notices are given to students about exams?
+    - What are the cautions for students concerning exam practices?
+    - What instructions do students receive regarding exams?
+    - What warnings are there for students about exam procedures?
+    - What should students avoid doing during exams?
+    - What warnings do students receive about examination behavior?
+    - What advice is given to students about maintaining proper exam conduct?
+    - What are the key warnings for students about exams?
+    - What should students be mindful of during examinations?
+    - What important guidelines are students given about exams?
+    - What warnings are important for students to remember during exams?
+    - What directives are given to students regarding exam practices?
+    - What is the warning to students regarding examination practices?
+    - What caution is given to students about exam procedures?
+
+- intent: intent_exam_consequence
+  examples: |
+    - What should students be aware of concerning examination conduct?
+    - What happens to students who engage in cheating during exams?
+    - What penalties are there for students involved in exam misconduct?
+    - What is the punishment for students caught cheating on exams?
+    - What disciplinary actions are taken against students for exam malpractices?
+    - What are the repercussions for a student involved in exam cheating?
+    - What sanctions are imposed on students for engaging in exam fraud?
+    - What happens to students found guilty of exam malpractices?
+    - What are the outcomes for students involved in examination misconduct?
+    - What actions are taken if a student cheats on an exam?
+    - What happens when a student is involved in examination cheating?
+    - What are the results of a student engaging in exam malpractices?
+    - What disciplinary measures are enforced for students in exam malpractices?
+    - What are the penalties for students who commit exam fraud?
+    - What happens to students who violate exam integrity?
+    - What are the consequences for a student involved in exam cheating?
+    - What are the disciplinary consequences of exam malpractices for students?
+    - What measures are taken against students caught cheating in exams?
+    - What happens to students involved in dishonest exam practices?
+    - What are the outcomes of students caught in exam misconduct?
+    - What are the consequences if a student engages in exam malpractices?
+    - What actions are taken against students for exam cheating?
+    - What are the repercussions of exam fraud for students?
+    - What happens if a student is caught in dishonest exam practices?
+    - What penalties do students face for exam malpractices?
+    - What disciplinary actions do students face for exam misconduct?
+    - What happens if a student cheats during an exam?
+    - What are the punishments for students caught in examination fraud?
+    - What consequences do students face if involved in exam cheating?
+    - What happens to students who break exam rules by cheating?
+
+
+- intent: intent_exam_cheating_definition
+  examples: |
+    - What is considered cheating in a university assessment?
+    - What actions are considered cheating in a university exam?
+    - What behaviors constitute cheating during university assessments?
+    - What is defined as cheating in a college assessment?
+    - What practices are regarded as cheating in university tests?
+    - What are examples of cheating in university examinations?
+    - What does the university classify as cheating in assessments?
+    - What counts as cheating in a college exam?
+    - What actions are deemed cheating in university evaluations?
+    - What behaviors are viewed as cheating during university tests?
+    - What constitutes academic dishonesty in university assessments?
+    - What activities are considered cheating in a university setting?
+    - What is recognized as cheating in university exams?
+    - What practices are seen as cheating in college assessments?
+    - What is categorized as cheating in university examinations?
+    - What types of actions are considered cheating in university tests?
+    - What does the university consider as cheating in exams?
+    - What behaviors are classified as cheating in university assessments?
+    - What are the university’s criteria for cheating in assessments?
+    - What activities are regarded as cheating during university exams?
+    - What is labeled as cheating in university evaluations?
+    - What examples illustrate cheating in university assessments?
+    - What actions are identified as cheating in university tests?
+    - What practices are deemed academic dishonesty in college exams?
+    - What are considered forms of cheating in university examinations?
+    - What kinds of behaviors are considered cheating in university assessments?
+    - What is treated as cheating in university exams?
+    - What actions are seen as cheating in college evaluations?
+    - What constitutes cheating in a university examination?
+    - What university policies define cheating in assessments?
+    - What are the prohibited actions that amount to cheating in university tests?
+
+
+- intent: intent_exam_cheating_forms
+  examples: |
+    - What types of cheating can occur during an exam?
+    - What are examples of cheating in an examination?
+    - What behaviors are considered cheating in an exam?
+    - What actions constitute cheating in a test?
+    - What are common methods of cheating during an exam?
+    - What practices are classified as cheating in examinations?
+    - What are some ways students cheat on exams?
+    - What activities are deemed cheating during an exam?
+    - What are typical forms of cheating in a test?
+    - What actions are viewed as cheating in exams?
+    - What are the various forms of cheating in an examination?
+    - What constitutes cheating in an exam setting?
+    - What are some common cheating tactics in exams?
+    - What behaviors amount to cheating in a test?
+    - What are some forms of academic dishonesty in exams?
+    - What actions are considered cheating in an examination?
+    - What are examples of dishonest practices during an exam?
+    - What activities are regarded as cheating in a test?
+    - What types of behavior are classified as cheating during exams?
+    - What are some cheating strategies used in examinations?
+    - What are some prohibited actions in exams that are considered cheating?
+    - What methods do students use to cheat in exams?
+    - What are some instances of cheating in an examination?
+    - What actions are identified as cheating during an exam?
+    - What practices are deemed to be cheating in tests?
+    - What are some ways students commit academic fraud in exams?
+    - What behaviors are typically considered cheating in exams?
+    - What actions are defined as cheating in a test?
+    - What forms of cheating are common in examinations?
+    - What are some examples of cheating in an academic exam?
+
+- intent: intent_exam_notes_policy
+  examples: |
+   - Are students permitted to have notes on their person or in their identity documents during an exam?
+   - Is it acceptable for students to carry notes or have them in their identity documents during an exam?
+   - Can students bring notes with them or store them in their identity documents for use during an exam?
+   - Is it within the rules for students to possess notes or store them in their identity documents during an exam?
+   - Are students allowed to keep notes on their person or inside their identity documents while taking an exam?
+   - Do exam regulations permit students to carry notes or keep them in their identity documents?
+   - Is it against the rules to have notes on your person or in your identity documents during an exam?
+   - Are students authorized to carry personal notes or store them in their identity documents during an exam session?
+   - Is it within the guidelines for students to possess notes or have them stored in their identity documents during an exam?
+   - Can students have notes on them or within their identity documents during an exam?
+   - Is it permissible for students to bring notes or have them in their identity documents during exams?
+   - Are students allowed to have any notes on their person or in their identity documents during an exam?
+   - Is it against exam regulations for students to carry notes or keep them in their identity documents?
+   - Do exam rules permit students to possess personal notes or store them in their identity documents?
+   - Are students allowed to bring notes or have them stored in their identity documents during an exam?
+   - Is it within the exam policies for students to carry notes or have them in their identity documents?
+   - Is it considered acceptable for students to have notes on their person or in their identity documents during an exam?
+   - Are students permitted to keep any notes on their person or within their identity documents during exams?
+   - Do exam guidelines allow students to carry personal notes or have them stored in their identity documents?
+   - Is it permissible under exam conditions for students to possess notes or keep them in their identity documents?
+   - Is it within the exam rules for students to carry notes or have them in their identity documents?
+   - Can students have any notes on them or in their identity documents during an exam?
+   - Is it against exam protocols for students to carry notes or store them in their identity documents?
+   - Are students allowed to bring notes or have them in their identity documents for use during exams?
+   - Is it acceptable for students to keep notes on their person or in their identity documents while taking an exam?
+   - Do exam regulations permit students to have notes on their person or in their identity documents?
+   - Is it permissible for students to carry any notes or have them stored in their identity documents during exams?
+   - Are students authorized to have any notes with them or in their identity documents during an exam?
+   - Is it within exam policies for students to carry personal notes or store them in their identity documents?
+   - Can students keep notes on their person or within their identity documents during an exam session?
+
+
+- intent: intent_exam_electronic_device_policy
+  examples: |
+    - Can I access information on my electronic equipment during an exam?
+    - Am I allowed to use information from my electronic devices during an exam?
+    - Is it permissible to access information on electronic equipment while taking an exam?
+    - Can I utilize information stored on my electronic devices during the exam?
+    - Is accessing information on electronic devices permitted during exams?
+    - Am I permitted to refer to information on my electronic devices during the exam?
+    - Is it within the rules to access data on electronic equipment during an exam?
+    - Can I use my electronic devices to look up information during the exam?
+    - Is accessing data on electronic equipment allowed during examination periods?
+    - Am I authorized to retrieve information from my electronic equipment during the exam?
+    - Is it acceptable to consult electronic devices for information during exams?
+    - Can I access my electronic devices for information during the exam?
+    - Is it against exam regulations to use electronic equipment for information retrieval?
+    - Am I allowed to refer to electronic devices for information during exams?
+    - Is it within exam guidelines to access data on electronic equipment during the exam?
+    - Can I use electronic devices to search for information during the exam?
+    - Is it permissible to consult electronic equipment for information during exams?
+    - Am I permitted to access information stored on my electronic devices during exams?
+    - Can I use my electronic equipment to access information needed for the exam?
+    - Is it within the exam policy to access data on electronic devices during exams?
+    - Can I access information on my electronic devices as needed during the exam?
+    - Is it against exam protocols to use electronic devices for accessing information?
+    - Am I allowed to use my electronic devices to retrieve necessary information during the exam?
+    - Can I refer to electronic devices to obtain information required during exams?
+    - Is it within exam rules to access data from electronic devices during the exam?
+    - Am I authorized to consult electronic equipment for necessary information during exams?
+    - Can I access my electronic devices to obtain information during the examination?
+    - Is it permissible to access information on electronic equipment during exam sessions?
+    - Am I permitted to use electronic devices for information access during exams?
+    - Can I utilize electronic equipment to access required information during the exam?
+    - Is it acceptable to consult electronic devices for information retrieval while taking exams?
+
+- intent: intent_exam_copying_consequence
+  examples: |
+    - What are the consequences if I copy from another student during the exam?
+    - What penalties will I face for copying from another student in the examination?
+    - What happens if I am caught cheating by copying from another student during the exam?
+    - What disciplinary actions are taken if I copy from another student in the examination?
+    - What is the punishment for copying from another student during the exam?
+    - What are the repercussions of copying from another student during the examination?
+    - What happens to students who cheat by copying from each other in exams?
+    - What are the consequences for students who engage in copying during exams?
+    - What measures are taken against students who copy from others during exams?
+    - What are the sanctions for students caught copying from another student in exams?
+    - What happens if I am found to have copied from another student during the exam?
+    - What disciplinary measures are enforced for students who copy from others during exams?
+    - What are the penalties for students involved in copying from another student during exams?
+    - What are the repercussions if I am caught copying from another student in the exam?
+    - What actions are taken against students who cheat by copying from their peers during exams?
+    - What happens if I cheat by copying from another student during an examination?
+    - What consequences will I face for copying answers from another student during the exam?
+    - What disciplinary actions are implemented if I copy from another student during exams?
+    - What are the penalties for students who cheat through copying from another student in exams?
+    - What will happen if I copy from another student's paper during the exam?
+    - What happens if I am caught copying answers from another student during an exam?
+    - What are the consequences for students who copy from their peers during exams?
+    - What disciplinary measures are in place for students caught copying during exams?
+    - What penalties do students face for copying from another student's exam paper?
+    - What happens if I am discovered to have copied from another student in the examination?
+    - What actions are taken against students who engage in copying during exams?
+    - What are the repercussions of copying from another student's work during an exam?
+    - What penalties will I receive if I copy from another student's exam paper?
+    - What disciplinary actions will be taken if I am caught copying from another student during the exam?
+    - What happens if I cheat by copying from another student's answers during the examination?
+
+- intent: intent_exam_aiding_candidates
+  examples: |
+    - Is it permissible to assist another candidate during an exam?
+    - Are candidates allowed to help each other during exams?
+    - Can I provide assistance to another candidate in the exam?
+    - Is aiding another exam candidate acceptable during examinations?
+    - Is it within the rules to aid another candidate in an exam?
+    - Are candidates permitted to support each other during exams?
+    - Can I give assistance to another candidate taking the exam?
+    - Is it against exam regulations to aid another candidate?
+    - Is it allowed to collaborate with another candidate during exams?
+    - Are candidates allowed to aid each other in the examination?
+    - Can I provide help to another candidate during the examination?
+    - Is it considered acceptable to assist another candidate during exams?
+    - Is aiding another candidate during exams a violation of exam rules?
+    - Are candidates allowed to cooperate with each other during examinations?
+    - Can I support another candidate during the exam session?
+    - Is it permissible to offer assistance to another exam candidate?
+    - Are candidates allowed to collaborate or aid each other during exams?
+    - Can I aid another candidate without violating exam policies?
+    - Is it against the guidelines to aid another candidate in the exam?
+    - Is it within exam regulations for candidates to help each other?
+    - Can I give assistance to another exam participant during the test?
+    - Is aiding another candidate in the exam session allowed?
+    - Are candidates allowed to provide support to each other in exams?
+    - Can I assist another candidate during the exam without consequences?
+    - Is it within the exam protocol to aid another candidate during the test?
+    - Are candidates allowed to offer help to each other during the examination?
+    - Can I collaborate with another candidate without breaching exam regulations?
+    - Is it permissible to provide guidance to another candidate during exams?
+    - Are candidates allowed to aid one another during the examination process?
+    - Can I aid another candidate in the exam under specific circumstances?
+
+- intent: intent_exam_cheating_punishment
+  examples: |
+    - What are the consequences of cheating in a university assessment?
+    - What penalties do students face for cheating in university assessments?
+    - What happens to students who cheat in university assessments?
+    - What disciplinary actions are taken for cheating in university assessments?
+    - What is the punishment for academic dishonesty in university assessments?
+    - What are the repercussions of cheating in a university assessment?
+    - What sanctions are imposed on students caught cheating in university assessments?
+    - What disciplinary measures are enforced for cheating in university assessments?
+    - What are the consequences of academic misconduct in university assessments?
+    - What disciplinary actions can be expected for cheating in university assessments?
+    - What penalties are there for students involved in cheating during university assessments?
+    - What happens if a student is found guilty of cheating in university assessments?
+    - What are the sanctions for academic dishonesty in university assessments?
+    - What is the punishment for plagiarism in university assessments?
+    - What are the disciplinary consequences of cheating in university assessments?
+    - What are the penalties for violating academic integrity in university assessments?
+    - What actions are taken against students who cheat in university assessments?
+    - What are the repercussions if a student is caught cheating in university assessments?
+    - What happens to students who engage in cheating during university assessments?
+    - What measures are taken against students found guilty of cheating in university assessments?
+    - What disciplinary actions do universities take against students who cheat in assessments?
+    - What are the consequences for academic fraud in university assessments?
+    - What is the outcome of cheating allegations in university assessments?
+    - What disciplinary measures can students expect for cheating in university assessments?
+    - What are the penalties for academic dishonesty in university assessments?
+    - What actions can universities take against students involved in cheating in assessments?
+    - What are the consequences of academic misconduct in university assessments?
+    - What sanctions apply to students involved in cheating during university assessments?
+    - What disciplinary sanctions are applied to students caught cheating in university assessments?
+    - What happens to students accused of cheating in university assessments?
+
+
+- intent: intent_cheating_serious_offence_reason
+  examples: |
+    - Why is cheating in a university assessment considered a serious academic offence?
+    - Why is cheating in university assessments viewed as a significant academic violation?
+    - What makes cheating in university assessments such a serious academic breach?
+    - Why is academic dishonesty in university assessments treated as a grave offense?
+    - What factors contribute to cheating being seen as a serious offense in university assessments?
+    - Why do universities consider cheating in assessments a severe breach of academic integrity?
+    - What reasons justify the seriousness of cheating in university assessments?
+    - Why is cheating in academic evaluations regarded as a critical academic misconduct?
+    - What are the implications that make cheating in university assessments a serious issue?
+    - Why is cheating in assessments such a substantial academic transgression?
+    - What principles underline the severity of cheating in university assessments?
+    - Why is academic integrity compromised when students cheat in assessments?
+    - What consequences make cheating in university assessments a serious matter?
+    - Why does cheating in university assessments undermine the academic process?
+    - What are the ethical reasons that classify cheating in assessments as serious?
+    - Why is there significant concern about cheating in university assessments?
+    - What educational principles are violated by cheating in university assessments?
+    - Why is there strict enforcement against cheating in university assessments?
+    - What impact does cheating in assessments have on the integrity of academic standards?
+    - Why is there zero-tolerance for cheating in university assessments?
+    - What makes cheating in assessments a matter of academic misconduct?
+    - Why is academic dishonesty in assessments considered detrimental to learning?
+    - What academic values are compromised when students cheat in assessments?
+    - Why is there a strong emphasis on preventing cheating in university assessments?
+    - What justifies the severe consequences of cheating in university assessments?
+    - Why does cheating in assessments undermine the credibility of academic achievements?
+    - What makes cheating in assessments a serious violation of academic rules?
+    - Why do universities prioritize preventing cheating in assessments?
+    - What impact does cheating in assessments have on the reputation of educational institutions?
+    - Why is there a focus on maintaining fairness and honesty in university assessments?
+    - What educational standards are upheld by penalizing cheating in assessments?
+
+
+- intent: intent_course_credit_earning
+  examples: |
+    - How do students earn credits for courses at the university?
+    - What is the process for students to earn credits for university courses?
+    - How do students accumulate credits for courses at the university?
+    - What are the steps involved in earning credits for university courses?
+    - How do students accrue credits for completing university courses?
+    - What is required for students to obtain credits for university courses?
+    - How are credits awarded to students for completing university courses?
+    - What criteria must students meet to earn credits for university courses?
+    - How are credits assigned to students for university courses?
+    - How do students receive credits upon completion of university courses?
+    - What are the procedures for students to earn credits in university courses?
+    - How do university students earn academic credits?
+    - What methods are used to award credits for university coursework?
+    - How are university course credits determined for students?
+    - How do students accumulate academic credits in university courses?
+    - What are the guidelines for students to earn credits in university courses?
+    - How do students collect credits for their university coursework?
+    - What is the protocol for students to earn credits from university courses?
+    - How do university students attain course credits towards their degrees?
+    - What steps must students follow to earn credits in university courses?
+    - How do students gain academic credits for completing university courses?
+    - What requirements must students fulfill to earn credits in university courses?
+    - How are credits awarded to students who complete university courses?
+    - How do students go about earning credits for their university coursework?
+    - What is the procedure for students to accumulate credits in university courses?
+    - How do students ensure they receive credits for university courses?
+    - What are the conditions under which students earn credits for university courses?
+    - How do students demonstrate eligibility for credits in university courses?
+    - What do students need to do to earn credits for university courses?
+    - How do university students validate their eligibility for course credits?
+    - What are the guidelines students follow to earn credits from university courses?
+
+- intent: intent_pass_mark_undergraduate
+  examples: |
+    - What grade is necessary to pass undergraduate programs at the university?
+    - What is the minimal mark to achieve for passing undergraduate courses at the university?
+    - What is the lowest grade considered passing for undergraduate programs at the university?
+    - What is the minimum GPA needed to pass undergraduate studies at the university?
+    - What is the grade expectation to pass undergraduate programs at the university?
+    - What is the baseline score required to pass undergraduate courses at the university?
+    - What grade scale defines passing for undergraduate programs at the university?
+    - What is the pass level for undergraduate studies at the university?
+    - What is the qualifying score for passing undergraduate programs at the university?
+    - What is the passing criterion for undergraduate courses at the university level?
+    - What is the passing standard for undergraduate courses at the university?
+    - What is the cutoff score for passing undergraduate programs at the university?
+    - What is the pass rate for undergraduate courses at the university?
+    - What is the acceptable grade for passing undergraduate studies at the university?
+    - What is the minimal passing percentage for undergraduate programs at the university?
+    - What is the passing threshold for undergraduate degrees at the university?
+    - What is the minimum grade required to pass undergraduate courses at the university?
+    - What is the qualifying mark for undergraduate programs at the university?
+    - What grade point is considered passing for undergraduate studies at the university?
+    - What score do students need to pass undergraduate courses at the university?
+    - What is the standard pass mark for undergraduate programs at the university?
+    - What is the benchmark for passing undergraduate courses at the university?
+    - What percentage constitutes a passing grade in undergraduate programs at the university?
+    - What is the passing criterion for undergraduate degrees at the university?
+    - What is the required passing mark for undergraduate studies at the university?
+    - What is the minimum mark needed to pass undergraduate courses at the university?
+    - What grade is considered passing for undergraduate programs at the university?
+    - What is the threshold for passing undergraduate courses at the university?
+    - What is the passing score required for undergraduate programs at the university?
+    - What is the minimum passing grade for undergraduate programs at the university?
+
+- intent: intent_failed_assessment_credit
+  examples: |
+    - Is it possible to earn credits for a course if the assessment is failed?
+    - Can a student receive credits if they do not pass the assessment?
+    - Do students earn credits if they fail the assessment?
+    - Is credit awarded for a course if the assessment is unsuccessful?
+    - Can credits be obtained if the assessment is not passed?
+    - Is it possible to earn course credits after failing the assessment?
+    - Are credits granted if a student does not pass the assessment?
+    - Can students still earn credits if they fail the course evaluation?
+    - Is credit given for a course even if the assessment is not passed?
+    - Do students receive credits if they do not pass the course assessment?
+    - Is it possible to earn course credits if the assessment results are unsatisfactory?
+    - Can students earn credits despite failing the assessment?
+    - Is credit awarded for a course if the evaluation is failed?
+    - Can students gain credits if they fail the course examination?
+    - Do students still earn credits after failing the course assessment?
+    - Is it possible to receive credits despite not passing the assessment?
+    - Can credits be earned if the assessment grade is below passing?
+    - Is it possible to earn credits if the course assessment is failed?
+    - Can a student receive course credits if they fail the assessment criteria?
+    - Do students earn credits if they do not meet the assessment requirements?
+    - Is credit still given for a course if the assessment grade does not meet expectations?
+    - Can credits be earned despite failing to meet the assessment standard?
+    - Is it possible for a student to earn credits even if the assessment results are below passing?
+    - Can students earn credits if they fail to achieve the required assessment score?
+    - Do students receive credits if the assessment outcome is not satisfactory?
+    - Is credit awarded if a student's performance falls short in the assessment?
+    - Can students still earn credits if they do not meet the assessment criteria?
+    - Is it possible to earn course credits with a failed assessment?
+    - Can students earn credits if they do not pass the course evaluation?
+    - Is credit given if a student's assessment performance is below the required level?
+
+- intent: intent_course_credit_determination
+  examples: |
+    - How is the credit value assigned to each course?
+    - What factors determine the number of credits for a course?
+    - How do universities decide the credit weight for each course?
+    - What criteria are used to assign credits to a course?
+    - How are the credits for university courses calculated?
+    - What is the process for determining course credits?
+    - How is the number of credits for a course established?
+    - What guidelines are followed to determine credits for each course?
+    - How do institutions assign credit hours to courses?
+    - What methods are used to determine the credit value of a course?
+    - How are course credits quantified at universities?
+    - What standards are applied to determine the credit allocation for courses?
+    - How is the credit hour for a course measured?
+    - What procedures are in place to assign credits to university courses?
+    - How are the credits for a course evaluated and assigned?
+    - What principles guide the determination of course credits?
+    - How do universities calculate the appropriate credits for each course?
+    - What factors influence the credit assignment for university courses?
+    - How is the credit load for a course determined?
+    - What processes are followed to establish the credit value of a course?
+    - How are credits distributed among different courses?
+    - What is the basis for assigning a specific number of credits to a course?
+    - How are academic credits determined for each course in a program?
+    - What are the steps for deciding the credit allocation for a course?
+    - How do educational institutions determine the credit hours for courses?
+    - What considerations are made when assigning credits to courses?
+    - How is the credit weight of a course calculated?
+    - What is the procedure for establishing how many credits a course is worth?
+    - How do colleges and universities decide on the credit value of a course?
+    - What guidelines and criteria are used to determine the number of credits assigned to a course?
+
+- intent: intent_graduation_credit_requirement
+  examples: |
+    - Can a student graduate without earning credits for all courses in their programme load?
+    - Is it possible for a student to graduate without earning credits for all their program courses?
+    - Can a student complete their degree without obtaining credits for all required courses?
+    - Is graduation possible if a student hasn't earned credits for all their program courses?
+    - Can a student still graduate if they haven't earned credits for all required courses?
+    - Is it feasible for a student to graduate without fulfilling the credit requirements for all courses?
+    - Can a student receive their degree without completing the necessary course credits?
+    - Is graduation allowed if a student hasn't accumulated credits for every course in their program?
+    - Can students graduate without fulfilling all course credit requirements?
+    - Is it possible for a student to complete their program without obtaining credits for all required courses?
+    - Can a student graduate if they haven't met the credit requirements for each course in their program?
+    - Is it feasible for students to graduate without earning credits for all their required courses?
+    - Can a student complete their degree program without earning credits for all their courses?
+    - Is it allowed for students to graduate if they haven't earned the required course credits?
+    - Can students still graduate if they haven't earned all the credits for their program courses?
+    - Is graduation possible if a student hasn't fulfilled the credit requirements for all their courses?
+    - Can students receive their degree without earning credits for all courses in their program?
+    - Is it possible for students to graduate without fulfilling the credit requirements for each course?
+    - Can a student finish their degree program without earning credits for all their courses?
+    - Is it permissible for students to graduate without earning credits for every course in their program?
+    - Can students graduate without fulfilling the course credit requirements?
+    - Is it feasible for a student to graduate without obtaining credits for every course in their program?
+    - Can a student still graduate if they haven't met the credit requirements for some courses?
+    - Is it possible for students to graduate without completing the credit requirements for all courses?
+    - Can students complete their degree program without fulfilling the credit requirements for every course?
+    - Is graduation allowed if a student hasn't earned credits for all required program courses?
+    - Can students graduate without meeting the course credit requirements for all courses?
+    - Is it possible for students to graduate without earning the necessary credits for all their program courses?
+    - Can a student receive their degree if they haven't earned credits for all the courses required in their program?
+    - Is it allowed for students to graduate without fulfilling the credit requirements for every course?
+    - Can students graduate without earning credits for each course listed in their program requirements?
+
+- intent: intent_fail_course_consequence
+  examples: |
+    - What happens if a student fails to meet the pass mark in a course?
+    - What are the consequences if a student fails to meet the pass mark in a course?
+    - What happens if a student doesn't achieve the passing grade in a course?
+    - What occurs when a student fails to reach the pass mark in a course?
+    - What is the outcome if a student doesn't meet the passing criteria in a course?
+    - What are the repercussions for not meeting the pass mark in a course?
+    - What happens to students who fail to achieve the pass mark in a course?
+    - What actions are taken if a student fails to meet the pass mark in a course?
+    - What are the consequences of not reaching the pass mark in a course?
+    - What occurs if a student doesn't hit the pass mark in a course?
+    - What happens if a student falls short of the pass mark in a course?
+    - What are the implications if a student fails to meet the pass mark in a course?
+    - What is the result of not meeting the pass mark in a course?
+    - What happens if a student doesn't pass a course by not meeting the pass mark?
+    - What steps are taken when a student fails to meet the pass mark in a course?
+    - What are the consequences if a student does not reach the pass mark in a course?
+    - What happens if a student fails a course by not meeting the pass mark?
+    - What measures are taken if a student fails to achieve the pass mark in a course?
+    - What occurs if a student does not meet the pass mark in a course?
+    - What are the outcomes if a student fails to meet the pass mark in a course?
+    - What actions are taken when a student doesn't achieve the pass mark in a course?
+    - What happens to students who don't reach the pass mark in a course?
+    - What are the results if a student fails to meet the pass mark in a course?
+    - What are the penalties if a student doesn't meet the pass mark in a course?
+    - What happens if a student fails to meet the required pass mark in a course?
+    - What are the consequences if a student doesn't achieve the necessary pass mark in a course?
+    - What steps are taken if a student does not meet the pass mark in a course?
+    - What happens if a student doesn't meet the minimum pass mark in a course?
+    - What actions are taken if a student falls short of the pass mark in a course?
+    - What are the implications for a student who doesn't meet the pass mark in a course?
+    - What is the process if a student fails to meet the pass mark in a course?
+
+- intent: intent_course_performance_assessment
+  examples: |
+    - How is student performance assessed in each course?
+    - How do instructors evaluate student performance in each course?
+    - What methods are used to assess student performance in each course?
+    - How is student achievement measured in each course?
+    - What criteria are used to assess student performance in each course?
+    - How do universities evaluate student performance in each course?
+    - How is academic performance assessed in each course?
+    - What techniques are used to measure student performance in each course?
+    - How are students graded in each course?
+    - What assessments are used to evaluate student performance in each course?
+    - How do professors determine student performance in each course?
+    - What is the process for assessing student performance in each course?
+    - How is student success evaluated in each course?
+    - What are the evaluation methods for student performance in each course?
+    - How are students' academic achievements assessed in each course?
+    - How is coursework used to assess student performance in each course?
+    - What tools are used to measure student performance in each course?
+    - How do educators assess student performance in each course?
+    - What evaluation criteria are used for student performance in each course?
+    - How is student progress measured in each course?
+    - What methods do instructors use to assess student performance in each course?
+    - How are exams and assignments used to evaluate student performance in each course?
+    - What grading systems are used to assess student performance in each course?
+    - How is student learning evaluated in each course?
+    - What performance metrics are used to assess students in each course?
+    - How do teachers measure student performance in each course?
+    - What assessment strategies are employed to evaluate student performance in each course?
+    - How are student achievements assessed in each course?
+    - What methods are used to grade student performance in each course?
+    - How do academic institutions assess student performance in each course?
+    - How is student competency evaluated in each course?
+
+
+- intent: intent_missed_exam_procedure
+  examples: |
+    - What should I do if I miss an examination?
+    - What steps should I take if I miss an examination?
+    - How should I proceed if I miss an exam?
+    - What actions should I take if I am unable to attend an examination?
+    - What should I do if I cannot make it to an exam?
+    - How do I handle missing an examination?
+    - What is the procedure if I miss an exam?
+    - What steps should be followed if I miss an examination?
+    - What are my options if I miss an exam?
+    - What should be done if I fail to attend an examination?
+    - How should I address missing an exam?
+    - What actions should I consider if I miss an examination?
+    - What is the recommended course of action if I miss an exam?
+    - How do I resolve missing an examination?
+    - What should be my immediate steps if I miss an exam?
+    - How do I manage the situation if I miss an examination?
+    - What should I do right after missing an exam?
+    - What are the next steps if I miss an examination?
+    - How do I handle the aftermath of missing an exam?
+    - What procedures should I follow if I miss an examination?
+    - What is the first thing I should do if I miss an exam?
+    - How should I respond if I miss an examination?
+    - What should I do if I am absent for an exam?
+    - How do I deal with missing an examination?
+    - What should I do if I miss my scheduled exam?
+    - What steps are necessary if I miss an examination?
+    - What are the steps to take if I miss an exam?
+    - What should I do to address missing an examination?
+    - How do I approach the situation if I miss an exam?
+    - What actions are needed if I miss an examination?
+    - What steps should be taken immediately if I miss an exam?
+  
+- intent: intent_deferred_exam_eligibility
+  examples: |
+    - Can I sit for a deferred examination if I miss an exam?
+    - Am I eligible to take a deferred examination if I miss the original exam?
+    - Can I request a deferred exam if I miss my scheduled examination?
+    - Is it possible to sit for a deferred exam if I am unable to attend the original exam?
+    - What are the procedures for taking a deferred examination after missing the initial exam?
+    - How do I apply for a deferred examination if I miss my exam date?
+    - Can I be granted a deferred examination if I miss my exam due to valid reasons?
+    - Is there an option to sit for a deferred exam if I miss the original exam date?
+    - Am I allowed to take a deferred exam if I couldn't attend the original examination?
+    - What is the policy on deferred examinations for students who miss their exams?
+    - How do universities handle deferred exams for students who miss their initial exams?
+    - Can I apply for a deferred assessment if I miss my exam appointment?
+    - Is there a process for students to request a deferred exam if they miss their original exam?
+    - What are the guidelines for requesting a deferred examination after missing the initial exam?
+    - How does the university accommodate students who miss their scheduled exam with deferred exams?
+    - Are there provisions for deferred exams if I am unable to attend the original exam date?
+    - Can students who miss their exam sit for a deferred assessment?
+    - What are the rules for taking a deferred exam if I miss the original assessment?
+    - How do I qualify for a deferred examination after missing the initial exam?
+    - Is there an opportunity for students to take a deferred exam after missing the first one?
+    - Can I sit for a deferred assessment if I miss my exam due to unforeseen circumstances?
+    - Am I eligible for a deferred exam if I am unable to attend the scheduled exam?
+    - Is it possible to request a deferred exam if I miss the initial exam date?
+    - Can I sit for a deferred assessment if I miss my exam due to valid reasons?
+    - What steps should I take to apply for a deferred examination if I miss my exam?
+    - How do universities handle requests for deferred exams from students who miss their exams?
+    - Can I request a deferred assessment if I miss my exam for legitimate reasons?
+    - Is there an option for students to sit for a deferred exam if they miss the original exam date?
+    - How does the university manage deferred examinations for students who miss their exams?
+    - Are there specific circumstances where I can apply for a deferred exam after missing the initial exam?
+    - Is it possible for me to take a deferred exam if I miss my exam due to extenuating circumstances?
+
+- intent: intent_exam_postponement_application
+  examples: |
+    - Who should I submit my application to postponed an examination to?
+    - Who is the appropriate person or office to submit my request to postpone an examination?
+    - Where should I submit my application to delay an examination?
+    - To whom do I direct my request to postpone a scheduled exam?
+    - What office or department should I approach to request a postponement of an exam?
+    - Whom should I contact to submit my application for postponing an examination?
+    - Who is responsible for receiving applications to postpone examinations?
+    - Who should I address my application to if I need to postpone an examination?
+    - What is the procedure for submitting an application to postpone an examination?
+    - Where do I send my request if I want to postpone taking an examination?
+    - To whom should I direct my application if I need to postpone my exam date?
+    - Whom should I inform if I want to postpone my examination?
+    - Where should I deliver my application to delay my examination?
+    - What department handles requests for postponing examinations?
+    - Who should I approach if I need to delay my examination?
+    - To which office or authority should I submit my request to postpone an exam?
+    - Who should I notify if I want to postpone my scheduled examination?
+    - Whom should I contact if I need to apply for a postponement of my exam?
+    - Where do I submit my request for an examination postponement?
+    - Who manages applications for postponing examinations?
+    - Who should I consult regarding the process to postpone an examination?
+    - Whom should I approach if I wish to postpone my exam date?
+    - To whom should I send my application if I need to postpone my examination?
+    - Where should I direct my request for postponing my exam?
+    - Who is responsible for handling requests to postpone examinations?
+    - Whom should I inform if I need to postpone my scheduled exam?
+    - Where do I submit my application if I need to postpone taking an exam?
+    - Who should I reach out to if I want to delay my examination?
+    - To whom should I address my application for delaying an examination?
+    - What is the proper channel for submitting an application to postpone an exam?
+    - Whom should I contact to request a postponement of my examination date?
+
+
+- intent: intent_exam_postponement_application_timing
+  examples: |
+    - When should I submit my application to postponed an examination?
+    - What is the deadline for submitting my application to postpone an examination?
+    - When is the appropriate time to submit my request to delay an examination?
+    - What is the recommended timeline for submitting my application to postpone an exam?
+    - How far in advance should I submit my request to postpone an examination?
+    - When should I send in my application to postpone the examination?
+    - What is the latest date by which I should submit my request to postpone an exam?
+    - How soon before the exam should I submit my application to postpone it?
+    - What is the deadline for requesting a postponement of the examination?
+    - When is the cutoff for submitting an application to delay the exam?
+    - At what point should I submit my application to postpone the exam?
+    - How early should I submit my application if I need to postpone the examination?
+    - What is the recommended timeframe for submitting my application for a postponed exam?
+    - When should I deliver my application if I want to postpone my examination?
+    - What is the optimal timing for submitting my request to delay the exam?
+    - When should I finalize and submit my application for postponing the examination?
+    - How much notice should I give before submitting my application to postpone the exam?
+    - What is the appropriate window for submitting my application to postpone the examination?
+    - When should I file my application to postpone the examination?
+    - What is the preferred schedule for submitting my application to delay an exam?
+    - When should I plan to submit my application if I need to postpone the examination?
+    - What is the timeline for submitting my application to postpone the exam?
+    - When should I formally submit my request to postpone the examination?
+    - How far ahead should I submit my application to postpone the exam?
+    - What is the earliest I can submit my application to postpone the examination?
+    - When should I initiate the process of submitting my application to delay the exam?
+    - What is the optimal time frame to submit my application for postponement?
+    - When should I send my application to postpone the examination?
+    - How much lead time should I allow before submitting my application to postpone the exam?
+    - When should I submit my request if I want to postpone the examination?
+    - What is the appropriate timing for submitting my application to postpone an exam?
+
+- intent: intent_exam_postponement_illness_documentation
+  examples: |
+    - What documentation do I need to provide to postponed an examination due to illness?
+    - What documentation is required to postpone an examination due to illness?
+    - What medical documentation do I need to provide to postpone an exam?
+    - What proof of illness is necessary to request a postponement of an examination?
+    - What kind of medical evidence should I submit to postpone an examination?
+    - What documentation is needed to support a request for postponing an exam due to illness?
+    - What medical records or certificates do I need to submit to postpone an exam?
+    - What documentation is required if I need to postpone my examination because of illness?
+    - What kind of doctor's note or medical certificate should I provide to postpone an examination?
+    - What medical evidence do I need to provide if I want to postpone an exam due to illness?
+    - What proof of sickness should I provide to request a postponement of my exam?
+    - What documents should I submit to delay my examination because of illness?
+    - What is the required medical documentation to support postponing an examination?
+    - What paperwork is necessary if I need to postpone my exam due to medical reasons?
+    - What medical paperwork should I provide to postpone my examination?
+    - What kind of medical documentation is sufficient to request a postponement of my exam?
+    - What certificates or medical records are necessary to postpone an exam due to illness?
+    - What documentation should I prepare to postpone my exam because of health issues?
+    - What documents do I need to submit if I want to delay my exam due to illness?
+    - What medical proof do I need to provide to request a postponement of my exam?
+    - What kind of health documentation do I need to provide to postpone an examination?
+    - What medical certificates are required to postpone my exam due to illness?
+    - What paperwork do I need to submit if I'm requesting to postpone my exam because of sickness?
+    - What medical evidence do I need to supply to postpone my exam due to illness?
+    - What documentation should I include if I need to postpone my exam because of medical issues?
+    - What medical verification should I present to postpone my exam?
+    - What kind of doctor's certificate is necessary to postpone my exam due to illness?
+    - What medical documents do I need to provide to support postponing my exam?
+    - What paperwork should I gather if I need to postpone my exam because of health problems?
+    - What documentation is required to support my request for postponement of an exam due to illness?
+    - What medical evidence should I provide if I want to postpone my exam due to health concerns?
+
+- intent: intent_exam_postponement_other_documentation
+  examples: |
+    - What documentation do I need to provide to postpond an examination due to other reasons?
+    - What documentation is necessary to postpone an examination for reasons other than illness?
+    - What documents do I need to provide to postpone an exam for reasons other than medical issues?
+    - What kind of documentation should I submit to request a postponement of an exam for other reasons?
+    - What paperwork is required if I want to postpone an exam for reasons other than health?
+    - What evidence or documentation is needed to support a request to postpone an exam for non-medical reasons?
+    - What documentation should I prepare to postpone an examination for reasons not related to illness?
+    - What documents are required if I need to delay my exam for reasons other than illness?
+    - What kind of proof or documentation should I provide to postpone an exam due to other reasons?
+    - What paperwork should I submit to delay an exam for reasons other than medical?
+    - What documentation should I provide if I want to postpone my exam due to non-medical reasons?
+    - What kind of evidence do I need to submit to request a postponement of my exam for reasons unrelated to illness?
+    - What documents do I need to gather if I am postponing my exam for reasons other than health?
+    - What paperwork is necessary if I want to postpone my exam for reasons not related to illness?
+    - What documentation is required to support a request to postpone an exam for reasons other than medical?
+    - What kind of proof should I provide to delay my exam for reasons other than illness?
+    - What documentation is needed if I need to postpone my exam due to personal reasons?
+    - What paperwork should I prepare if I need to postpone my exam due to unforeseen circumstances?
+    - What kind of documentation is sufficient to request a postponement of my exam for non-medical reasons?
+    - What evidence should I provide to postpone my exam due to reasons other than illness?
+    - What documents should I include in my request to postpone my exam for other reasons?
+    - What paperwork do I need to submit to support my request to postpone my exam for non-medical reasons?
+    - What documentation should I gather if I want to postpone my exam due to personal issues?
+    - What kind of proof do I need to submit if I want to postpone my exam for reasons unrelated to health?
+    - What documents should I provide if I am requesting to postpone my exam for reasons other than illness?
+    - What paperwork should accompany my application to postpone my exam for non-medical reasons?
+    - What documentation should I present to postpone my exam for reasons not related to illness?
+    - What kind of evidence should I provide if I want to postpone my exam due to reasons other than medical?
+    - What documents are required to support my request to postpone my exam for non-medical reasons?
+    - What kind of paperwork should I submit to delay my exam due to reasons other than illness?
+    - What documentation should I include if I want to postpone my exam for reasons other than health?
+  
+- intent: intent_postponed_exam_approval_without_regular_attendance
+  examples: |
+    - Will I be approved for a postponed examination if I haven't attended classes regularly?
+    - Can I be granted a postponed examination if I have irregular attendance in classes?
+    - Will I be eligible for a deferred exam if I haven't been attending classes regularly?
+    - Is it possible to receive approval for a postponed exam despite irregular class attendance?
+    - Can I request a postponed examination if I haven't attended classes regularly?
+    - Will my application for a deferred exam be accepted if I haven't been regular in attending classes?
+    - Is attendance in classes a factor in determining approval for a postponed exam?
+    - Will my request for a postponed exam be considered if I have irregular attendance in classes?
+    - Does irregular class attendance affect the approval of a postponed examination?
+    - How does irregular class attendance impact the decision to approve a postponed exam?
+    - Is irregular attendance in classes a barrier to getting approval for a postponed examination?
+    - Can I still apply for a deferred exam even if I haven't been attending classes regularly?
+    - Does my attendance record affect the likelihood of approval for a postponed examination?
+    - Will my irregular attendance in classes affect the decision on my application for a deferred exam?
+    - How does my class attendance history influence the approval of a postponed examination?
+    - Is regular class attendance a requirement for approval of a postponed exam?
+    - Will my request for a postponed exam be rejected due to irregular attendance in classes?
+    - Does attendance play a role in determining whether I can get a postponed examination?
+    - Can I expect approval for a postponed exam if I have not attended classes regularly?
+    - How does my attendance record impact the approval process for a deferred exam?
+    - Will my application for a deferred exam be reviewed differently if I haven't attended classes regularly?
+    - Does my class attendance affect the decision-making process for a postponed exam?
+    - Is regular attendance a prerequisite for being granted a postponed examination?
+    - Will my irregular class attendance affect my chances of getting a deferred exam?
+    - How does my class attendance affect my eligibility for a postponed examination?
+    - Can I still qualify for a deferred exam despite my irregular attendance in classes?
+    - Will my attendance history be considered in the decision to approve a postponed examination?
+    - Does my attendance record impact the outcome of my application for a postponed exam?
+    - Can I receive approval for a postponed exam even if my class attendance has been irregular?
+    - Will my application for a deferred exam be affected by my irregular attendance in classes?
+    - Does irregular class attendance reduce my chances of being approved for a postponed examination?
+
+- intent: intent_postponed_exam_approval_notification
+  examples: |
+    - How will I know if my application for a postponed examination is approved?
+    - How do I find out if my request for a postponed examination has been approved?
+    - What is the process for receiving notification of the approval of my postponed exam application?
+    - How will I be informed if my application for a deferred exam is accepted?
+    - How can I check the status of my application for a postponed examination?
+    - What steps should I take to confirm whether my postponed exam application has been approved?
+    - How will I receive confirmation of the approval of my request for a postponed examination?
+    - When will I be notified about the outcome of my application for a postponed examination?
+    - What notification method is used to inform students about the approval of their deferred exam requests?
+    - How soon after submitting my application will I know if my postponed examination has been approved?
+    - Who should I contact to inquire about the status of my postponed exam application?
+    - What is the timeline for receiving a decision on my postponed examination application?
+    - Where can I check to see if my application for a deferred exam has been approved?
+    - How long does it take to hear back about the approval of my postponed examination application?
+    - How does the university notify students about the approval of their deferred exam applications?
+    - What communication method is used to inform students of the approval status of their postponed exam requests?
+    - Is there a specific timeframe within which I will be notified of the approval of my postponed examination application?
+    - What steps should I follow to confirm the approval of my postponed exam request?
+    - How can I verify whether my application for a deferred examination has been approved?
+    - When can I expect to receive confirmation regarding the approval of my postponed exam application?
+    - Who should I contact if I haven't received notification about the approval of my deferred exam request?
+    - How will I know if my request for a postponed examination has been granted?
+    - Where can I find information about the status of my postponed examination application?
+    - How do I check the approval status of my application for a deferred exam?
+    - What is the typical process for informing students about the approval of their postponed exam applications?
+    - How will I be notified if my application for a postponed exam has been approved?
+    - What should I expect in terms of notification once my postponed exam application has been reviewed?
+    - How can I confirm the approval of my postponed examination application?
+    - When should I expect to receive confirmation of the approval or denial of my deferred exam application?
+    - How will the university inform me about the approval of my postponed exam request?
+    - Who should I speak to if I haven't received confirmation of the approval of my postponed exam application?
+
+
+- intent: intent_postponed_exam_retake_status
+  examples: |
+    - Will a postponed examination be considered a retake?
+    - Is a postponed examination classified as a retake?
+    - Will a deferred exam count as a retake?
+    - Does postponing an exam make it a retake?
+    - Is a postponed exam treated the same as a retake?
+    - Will my postponed examination be marked as a retake on my record?
+    - Is a postponed exam equivalent to retaking the exam?
+    - Does taking a postponed exam mean it's a retake?
+    - Will a deferred examination be recorded as a retake?
+    - Is a postponed examination regarded as a retake attempt?
+    - Does a postponed exam get considered as a retake in academic records?
+    - Is there a distinction between a postponed exam and a retake?
+    - Will my postponed exam be seen as a retake by the university?
+    - Are postponed exams and retakes the same in terms of classification?
+    - Does postponing an examination mean I am retaking it?
+    - Is a postponed exam categorized under retakes?
+    - Will my postponed exam be viewed as a retake in my transcript?
+    - Does a postponed examination count towards retake limits?
+    - Is a deferred exam considered a retake attempt?
+    - Will a postponed exam be treated like a retake on my academic record?
+    - Are there differences between postponed exams and retakes?
+    - Is a deferred examination seen as a retake in university policy?
+    - Does a postponed exam affect my retake statistics?
+    - Will my postponed examination be handled as a retake?
+    - Is a postponed exam labeled as a retake on my student record?
+    - Are postponed exams officially considered retakes?
+    - Does taking a postponed exam mean I am undergoing a retake process?
+    - Will my academic record show a postponed exam as a retake?
+    - Is a deferred exam equivalent to a retake in terms of policy?
+    - Does postponing an exam categorize it as a retake?
+    - Will a postponed exam appear as a retake in my academic history?
+
+
+- intent: intent_missed_exam_fee
+  examples: |
+    - Do I need to pay a fee for a missed examination?
+    - Is there a fee for missing an exam?
+    - Do I have to pay if I miss an examination?
+    - Are there charges associated with missing an exam?
+    - Will I incur a fee for not attending an exam?
+    - Do I need to pay a penalty for a missed examination?
+    - Is there a cost involved for missing an exam?
+    - Do I need to pay a fee if I miss my scheduled exam?
+    - Are there financial penalties for missing an examination?
+    - Will I be charged for not taking an exam?
+    - Is there a fee required if I fail to attend an exam?
+    - Do students need to pay for missed exams?
+    - Are there any fees for exams that I miss?
+    - Will there be a charge if I do not attend my exam?
+    - Is there a cost for missing a scheduled examination?
+    - Do I need to pay any fees for a missed exam?
+    - Are missed exams subject to a fee?
+    - Will I be billed for not showing up to an exam?
+    - Is there a fee if I do not sit for my exam?
+    - Are there any charges for not attending an examination?
+    - Do I have to pay for missing a scheduled exam?
+    - Is there a financial consequence for missing an exam?
+    - Will I be required to pay for missing an exam?
+    - Are there any costs for missing an examination?
+    - Do I need to pay a fee if I miss my exam date?
+    - Is there a penalty fee for missing an exam?
+    - Will I have to pay a fee if I don’t take my exam?
+    - Are missed exams subject to a financial penalty?
+    - Do I incur any costs for missing an exam?
+    - Is there a fee assessed for missing an exam?
+    - Will I be financially penalized for missing an examination?
+
+- intent: intent_absent_exam_no_reason_consequence
+  examples: |
+    - What happens if a student is absent from an examination without a valid reason?
+    - What are the consequences for a student missing an exam without justification?
+    - What happens to students who skip exams without a valid excuse?
+    - What penalties are there for students absent from an exam without reason?
+    - What is the punishment for students who don't attend exams without a valid reason?
+    - What disciplinary actions are taken against students for unexcused exam absences?
+    - What are the repercussions for a student missing an exam without a legitimate reason?
+    - What sanctions are imposed on students who are absent from exams without cause?
+    - What happens to students who miss exams without a valid reason?
+    - What are the outcomes for students absent from examinations without an excuse?
+    - What actions are taken if a student misses an exam without a valid reason?
+    - What happens when a student is absent from an exam without justification?
+    - What are the results of a student missing an exam without a valid reason?
+    - What disciplinary measures are enforced for students absent from exams without excuse?
+    - What are the penalties for students who miss exams without a legitimate reason?
+    - What happens to students who don't attend exams without a valid excuse?
+    - What are the consequences for a student absent from exams without valid reason?
+    - What are the disciplinary consequences of unexcused exam absences for students?
+    - What measures are taken against students absent from exams without justification?
+    - What happens to students who are absent from exams without a valid excuse?
+    - What are the outcomes for students who miss exams without legitimate reason?
+    - What are the consequences if a student misses an exam without a valid reason?
+    - What actions are taken against students for unexcused exam absences?
+    - What are the repercussions of missing exams without valid reason for students?
+    - What happens if a student is absent from exams without a valid excuse?
+    - What penalties do students face for missing exams without justification?
+    - What disciplinary actions do students face for unexcused absences from exams?
+    - What happens if a student skips an exam without a valid reason?
+    - What are the punishments for students absent from exams without legitimate reason?
+    - What consequences do students face if they miss exams without a valid reason?
+    - What happens to students who fail to attend exams without a valid excuse?
+  
+- intent: intent_fail_grade_CGPA_impact
+  examples: |
+    - How does the Fail (F) Grade affect the student's CGPA?
+    - What impact does an F grade have on a student's CGPA?
+    - How does receiving an F affect a student's cumulative GPA?
+    - How is a student's CGPA affected by a failing grade?
+    - What effect does a fail grade have on a student's overall GPA?
+    - How does a failing grade influence a student's CGPA?
+    - What happens to a student's CGPA when they get an F?
+    - How does an F in a course impact a student's GPA?
+    - What are the repercussions of an F grade on a student's CGPA?
+    - How is the CGPA of a student impacted by a fail grade?
+    - What effect does an F have on a student's cumulative GPA?
+    - How does a failing grade affect the calculation of a student's CGPA?
+    - What is the impact of a fail grade on the student's overall GPA?
+    - How does a student's CGPA change with a failing grade?
+    - What happens to the CGPA when a student receives an F?
+    - How does an F grade influence a student's overall GPA?
+    - What are the effects of a failing grade on a student's CGPA?
+    - How does receiving a fail grade affect the calculation of a student's GPA?
+    - What impact does a failing grade have on the cumulative GPA of a student?
+    - How is the overall GPA of a student affected by an F grade?
+    - What happens to a student's CGPA if they get a fail grade?
+    - How does an F grade affect a student's GPA calculation?
+    - What effect does a failing grade have on a student's cumulative GPA?
+    - How does a student's CGPA get impacted by a fail grade?
+    - What are the consequences of an F grade on the student's overall GPA?
+    - How does an F in a subject influence a student's CGPA?
+    - What impact does receiving an F grade have on a student's cumulative GPA?
+    - How is a student's GPA affected by getting a failing grade?
+    - What happens to the CGPA when a student receives a failing grade?
+    - How does a fail grade influence the overall GPA of a student?
+    - What are the repercussions of receiving an F on a student's CGPA?
+
+- intent: intent_justifiable_absence_reason
+  examples: |
+    - What is considered a justifiable reason for absence from an examination?
+    - What qualifies as a legitimate reason for missing an exam?
+    - What are acceptable excuses for being absent from an examination?
+    - What reasons are considered valid for not attending an exam?
+    - What constitutes a justifiable excuse for exam absence?
+    - What are the acceptable reasons for a student to miss an exam?
+    - What can be considered a legitimate cause for being absent from an exam?
+    - What reasons justify a student's absence from an examination?
+    - What are valid excuses for missing an exam?
+    - What qualifies as a reasonable excuse for not taking an exam?
+    - What are the criteria for a justifiable exam absence?
+    - What can be considered a valid reason for not attending an exam?
+    - What excuses are acceptable for exam absence?
+    - What is an acceptable justification for missing an exam?
+    - What reasons are deemed valid for an examination absence?
+    - What can be considered a reasonable cause for missing an exam?
+    - What constitutes a valid excuse for not attending an exam?
+    - What justifies a student's absence from an examination?
+    - What are legitimate reasons for being absent from an exam?
+    - What can be considered an acceptable reason for missing an exam?
+    - What reasons are recognized as valid for not taking an exam?
+    - What is considered an acceptable excuse for missing an exam?
+    - What qualifies as a justifiable cause for exam absence?
+    - What are the valid justifications for not attending an exam?
+    - What can be considered a legitimate reason for being absent from an exam?
+    - What excuses are considered valid for missing an exam?
+    - What is considered a reasonable excuse for not taking an exam?
+    - What reasons are acceptable for not attending an examination?
+    - What justifications are recognized for exam absence?
+    - What can be considered a valid cause for missing an exam?
+    - What are the acceptable justifications for a student's absence from an exam?
+
+- intent: intent_abs_grade_CGPA_impact
+  examples: |
+    - Does an ABS grade affect the student's CGPA?
+    - Does an ABS grade impact a student's CGPA?
+    - How does an ABS grade influence the calculation of a student's CGPA?
+    - Is a student's CGPA affected by receiving an ABS grade?
+    - What effect does an ABS grade have on a student's CGPA?
+    - Does receiving an ABS grade alter a student's CGPA?
+    - How is a student's CGPA influenced by an ABS grade?
+    - What impact does an ABS grade have on the overall GPA of a student?
+    - Does a grade of ABS count towards a student's CGPA?
+    - How does an ABS grade factor into the calculation of a student's CGPA?
+    - Does an ABS grade contribute to a student's cumulative GPA?
+    - How does receiving an ABS grade affect the computation of CGPA?
+    - Is a student's CGPA modified by an ABS grade?
+    - What role does an ABS grade play in determining a student's CGPA?
+    - How does an ABS grade influence a student's cumulative GPA?
+    - Does an ABS grade change the overall GPA calculation for a student?
+    - How does a grade of ABS affect a student's CGPA computation?
+    - Does an ABS grade have any impact on a student's cumulative GPA?
+    - How does an ABS grade factor into the overall GPA of a student?
+    - Does receiving an ABS grade impact the student's GPA calculation?
+    - What effect does an ABS grade have on the calculation of a student's cumulative GPA?
+    - Is a student's GPA affected by an ABS grade?
+    - How does an ABS grade influence the overall calculation of a student's GPA?
+    - Does an ABS grade affect the student's GPA in any way?
+    - How does the grade of ABS influence a student's CGPA calculation?
+    - What impact does an ABS grade have on the overall GPA of a student?
+    - Does an ABS grade alter the calculation of a student's GPA?
+    - How is the cumulative GPA of a student impacted by an ABS grade?
+    - Does an ABS grade factor into the student's CGPA calculation?
+    - What influence does an ABS grade have on a student's overall GPA?
+    - How does receiving a grade of ABS affect the student's GPA computation?
+
+- intent: intent_exam_registration_requirement
+  examples: |
+    - Can I sit for the University examinations if I'm not a registered student?
+    - Am I allowed to take University exams if I'm not registered as a student?
+    - Can I attend University exams without being a registered student?
+    - Is it possible to sit for University exams if I haven't registered as a student?
+    - Can I participate in University examinations without student registration?
+    - Am I eligible to take University exams if I'm not officially registered?
+    - Can non-registered individuals sit for University exams?
+    - Is registration mandatory to take University exams?
+    - Can I take University exams if I'm not enrolled as a student?
+    - Are non-registered students allowed to sit for University exams?
+    - Can I attend University examinations if I haven't registered as a student?
+    - Do I need to be a registered student to take University exams?
+    - Can I sit for University exams if my student registration is incomplete?
+    - Is it required to be a registered student to take University exams?
+    - Can I participate in University exams without being a registered student?
+    - Is student registration necessary to sit for University exams?
+    - Can I take the University exams if I am not registered?
+    - Are University exams open to non-registered students?
+    - Can I be a candidate for University exams without being registered?
+    - Is it possible to sit for University exams without student registration?
+    - Can unregistered students take University exams?
+    - Do I have to be registered to sit for University examinations?
+    - Can I sit for University exams if I haven't completed registration?
+    - Is it permissible to take University exams if I am not a registered student?
+    - Can I sit for University exams without being officially registered?
+    - Can I take the University examinations if I am not a registered student?
+    - Do non-registered individuals qualify to sit for University exams?
+    - Is registration a prerequisite for taking University exams?
+    - Can I attend University exams if I’m not officially enrolled as a student?
+    - Are only registered students allowed to sit for University exams?
+    - Is it necessary to be a registered student to participate in University exams?
+
+- intent: intent_unpaid_fees_consequence
+  examples: |
+    - What happens if I don't pay all the required University fees?
+    - What are the consequences of not paying all the mandatory University fees?
+    - What occurs if I fail to settle all University fees?
+    - What happens if I don't meet the University fee payment obligations?
+    - What are the repercussions of not paying the required fees to the University?
+    - What are the implications if I do not pay all the necessary fees to the University?
+    - What happens if I fail to pay the complete University fees?
+    - What actions are taken if I don't pay all the stipulated University fees?
+    - What are the penalties for not paying all the University fees?
+    - What are the outcomes of not fulfilling the University fee requirements?
+    - What are the results of not paying all the mandated University fees?
+    - What happens if I neglect to pay all University fees on time?
+    - What are the effects of non-payment of University fees?
+    - What occurs if I do not pay the full amount of University fees?
+    - What happens if I am unable to pay all University fees?
+    - What are the repercussions if I don't settle all University fees?
+    - What are the consequences of failing to pay all University fees?
+    - What are the implications of not meeting all University fee obligations?
+    - What actions are taken if I miss paying all University fees?
+    - What happens if I don't pay the required fees to the University?
+    - What are the penalties for not fulfilling all University fee requirements?
+    - What happens if I fail to pay all the University fees?
+    - What are the outcomes of not paying all required fees at the University?
+    - What happens if I am late in paying all University fees?
+    - What are the repercussions of not paying the necessary University fees?
+    - What are the consequences of not completing payment of University fees?
+    - What occurs if I fail to pay all fees required by the University?
+    - What actions will the University take if I don't pay all fees?
+    - What are the penalties for non-payment of all University fees?
+    - What happens if I don't settle all the University fees by the due date?
+    - What are the results of not paying all the essential University fees?
+  
+- intent: intent_partial_registration_exam_participation
+  examples: |
+    - Can I sit for the examinations if I'm not fully registered?
+    - Am I allowed to take the examinations if my registration is incomplete?
+    - Can I participate in the examinations without completing my registration?
+    - Is it possible to sit for the examinations if I haven't finished registering?
+    - Can I attend the examinations if I'm not fully enrolled?
+    - Am I eligible to take the examinations if my registration process is not complete?
+    - Can I sit for the examinations if my registration status is pending?
+    - Is it permissible to participate in the examinations without finalizing my registration?
+    - Can I take the examinations if I'm in the process of registering?
+    - Are students with incomplete registration allowed to sit for the examinations?
+    - Can I attend the examinations if I haven't completed my registration?
+    - Do I need to be fully registered to sit for the examinations?
+    - Can I participate in the examinations if I'm still in the registration phase?
+    - Is it possible to sit for the examinations if my registration is not yet finalized?
+    - Can I take the examinations if my registration paperwork is still in progress?
+    - Am I allowed to sit for the examinations if I'm not fully enrolled yet?
+    - Can I attend the examinations if my registration details are still being processed?
+    - Is it permissible to participate in the examinations if my registration is not complete?
+    - Can I sit for the examinations if I haven't completed all registration requirements?
+    - Am I eligible to take the examinations if I'm in the midst of registering?
+    - Can I attend the examinations if my registration is still pending approval?
+    - Is it possible to sit for the examinations if my registration status is not finalized?
+    - Can I take the examinations if I haven't yet completed my registration process?
+    - Am I allowed to participate in the examinations if I haven't finished registering?
+    - Can I sit for the examinations if my registration is not yet confirmed?
+    - Is it permissible to attend the examinations if I haven't fully registered?
+    - Can I participate in the examinations if I'm still in the registration process?
+    - Is it possible to sit for the examinations if my registration status is pending?
+    - Can I take the examinations if I haven't completed all necessary registration steps?
+    - Am I eligible to attend the examinations if my registration is incomplete?
+    - Can I participate in the examinations if I haven't yet completed all registration formalities?
+
+- intent: intent_unregistered_exam_consequence
+  examples: |
+    - What happens if I sit for the examinations without being registered?
+    - What are the consequences if I take the examinations without completing registration?
+    - What happens if I attempt to sit for exams without being officially registered?
+    - What are the repercussions of taking exams without proper registration?
+    - What occurs if I participate in exams without completing the registration process?
+    - What are the implications of sitting for exams without being properly registered?
+    - What happens if I take exams without fulfilling registration requirements?
+    - What actions are taken if I attempt to sit for exams without registration?
+    - What are the penalties for taking exams without formal registration?
+    - What happens if I attend exams without being officially enrolled?
+    - What are the consequences of attempting to sit for exams without registration?
+    - What occurs if I participate in exams without completing the registration formalities?
+    - What happens if I try to take exams without meeting registration criteria?
+    - What are the repercussions of sitting for exams without proper registration?
+    - What are the implications of attending exams without being formally registered?
+    - What happens if I attempt to take exams without fulfilling registration obligations?
+    - What actions will be taken if I sit for exams without the required registration?
+    - What are the penalties for attempting to take exams without registration?
+    - What occurs if I attend exams without having completed registration procedures?
+    - What happens if I take exams without going through the registration process?
+    - What are the consequences of sitting for exams without meeting registration requirements?
+    - What are the repercussions if I attend exams without being officially registered?
+    - What occurs if I attempt to take exams without being properly registered?
+    - What happens if I participate in exams without having finalized my registration?
+    - What are the implications of attempting to sit for exams without full registration?
+    - What happens if I try to attend exams without completing the registration steps?
+    - What are the consequences of attempting to take exams without formal registration?
+    - What occurs if I attend exams without being officially enrolled in the course?
+    - What happens if I participate in exams without having properly registered beforehand?
+    - What are the penalties for taking exams without having gone through registration?
+    - What occurs if I sit for exams without having my registration status confirmed?
+
+
+- intent: intent_exam_worth_without_registration
+  examples: |
+    - Is it worth sitting for the examinations if I'm not registered?
+    - Should I take the examinations if I haven't completed registration?
+    - Is it advisable to sit for exams without being officially registered?
+    - Is there any benefit to taking exams without proper registration?
+    - Is it worthwhile to attend exams if I haven't finalized my registration?
+    - Would it be beneficial to sit for exams without completing the registration process?
+    - Is there value in attempting exams without being formally registered?
+    - Should I consider taking exams if I'm not yet registered?
+    - Is it a good idea to attend exams without fulfilling registration requirements?
+    - Is it recommended to sit for exams without being officially enrolled?
+    - Is there merit in attempting exams without having completed registration?
+    - Should I proceed with exams if I haven't completed my registration?
+    - Is it worthwhile to attend exams without meeting registration criteria?
+    - Is there any point in sitting for exams without proper registration?
+    - Should I take exams if I haven't gone through the registration process?
+    - Is it worthwhile to attempt exams without being fully registered?
+    - Is there value in sitting for exams without formal registration?
+    - Should I go ahead with exams if I haven't yet finalized my registration?
+    - Is it beneficial to take exams without fulfilling registration obligations?
+    - Is it worth attempting exams without having completed registration?
+    - Should I consider sitting for exams if my registration isn't complete?
+    - Is there any benefit in attending exams without being officially registered?
+    - Should I take exams if I'm not yet officially enrolled?
+    - Is it worthwhile to attempt exams without meeting registration requirements?
+    - Is there merit in sitting for exams without having formal registration?
+    - Should I go through with exams if I haven't finalized my registration?
+    - Is it advisable to take exams without fulfilling all registration criteria?
+    - Should I proceed with exams without having fully registered?
+    - Is it recommended to attend exams if I haven't completed registration?
+    - Is there any point in attempting exams without having completed my registration?
+    - Should I sit for exams if I'm not officially registered yet?
+
+- intent: intent_course_completion_requirements
+  examples: |
+    - What are the requirements to complete a course
+    - What do I need to fulfill to finish a course?
+    - What are the criteria for completing a course?
+    - What steps must I take to complete a course?
+    - What is required to successfully finish a course?
+    - What are the prerequisites for course completion?
+    - What conditions must be met to complete a course?
+    - What do I need to achieve to complete a course?
+    - What must I do to satisfy the requirements of a course?
+    - What qualifications do I need to complete a course?
+    - What are the necessary elements for course completion?
+    - What are the expectations for completing a course?
+    - What are the essentials to complete a course?
+    - What are the key components of course completion?
+    - What achievements are necessary to complete a course?
+    - What are the essential steps to complete a course?
+    - What are the stipulations for completing a course?
+    - What are the prerequisites for finishing a course?
+    - What do I need to accomplish to complete a course?
+    - What are the mandatory conditions to finish a course?
+    - What are the fundamental requirements for course completion?
+    - What are the necessary tasks to complete a course?
+    - What are the essential benchmarks for course completion?
+    - What are the fundamental criteria for completing a course?
+    - What must I fulfill to successfully complete a course?
+    - What are the basic requirements for course completion?
+    - What qualifications are needed to complete a course?
+    - What are the must-have accomplishments for course completion?
+    - What are the core requirements for finishing a course?
+    - What are the basic prerequisites for completing a course?
+    - What are the necessary actions to complete a course?
+
+- intent: intent_maximum_retake_courses
+  examples: |
+    - Can I accumulate more than five retake courses at a time?
+    - Is it possible to have more than five retake courses concurrently?
+    - Can I retake more than five courses simultaneously?
+    - Is there a limit to the number of retake courses I can accumulate at once?
+    - Can I exceed five retake courses at any given time?
+    - Is there a restriction on the number of retake courses I can have simultaneously?
+    - Are more than five retake courses allowed to be accumulated concurrently?
+    - Can I have over five retake courses ongoing simultaneously?
+    - Is it permissible to accumulate more than five retake courses simultaneously?
+    - Can I maintain more than five retake courses concurrently?
+    - Is there a maximum limit to the number of retake courses I can accumulate simultaneously?
+    - Am I allowed to have more than five retake courses going on at the same time?
+    - Can I enroll in more than five retake courses concurrently?
+    - Is it acceptable to have more than five retake courses in progress simultaneously?
+    - Is there a cap on the number of retake courses I can accumulate at once?
+    - Can I undertake more than five retake courses concurrently?
+    - Is it feasible to accumulate more than five retake courses simultaneously?
+    - Can I register for more than five retake courses at the same time?
+    - Is there a restriction on the number of retake courses I can take concurrently?
+    - Can I manage more than five retake courses concurrently?
+    - Is it possible to handle more than five retake courses simultaneously?
+    - Can I have more than five retake courses on my schedule simultaneously?
+    - Is it permissible to amass more than five retake courses concurrently?
+    - Can I schedule more than five retake courses concurrently?
+    - Is there a limit on how many retake courses I can take at once?
+    - Can I take more than five retake courses concurrently?
+    - Is it allowed to accumulate more than five retake courses simultaneously?
+    - Can I undertake more than five retake courses at any one time?
+    - Is there a maximum number of retake courses I can pursue simultaneously?
+    - Can I handle more than five retake courses at once?
+    - Is it possible to maintain more than five retake courses simultaneously?
+  
+- intent: intent_course_registration_prioritization
+  examples: |
+    - What should I prioritize when registering for courses?
+    - What factors should I consider first when registering for courses?
+    - What are the key priorities when selecting courses during registration?
+    - What should be my main focus when registering for courses?
+    - What are the primary considerations when choosing courses to register for?
+    - What should I emphasize when selecting courses for registration?
+    - What are the top priorities for me to consider during course registration?
+    - What criteria should I prioritize when registering for courses?
+    - What aspects should I focus on when deciding which courses to register for?
+    - What should be my main concerns when selecting courses to register for?
+    - What should I prioritize as I choose my courses during registration?
+    - What are the most important factors to prioritize when registering for courses?
+    - What should be my first considerations when selecting courses for registration?
+    - What should I focus on first when registering for my courses?
+    - What should I pay attention to when choosing my courses for registration?
+    - What are the initial priorities I should have when registering for courses?
+    - What are the critical elements to prioritize when planning course registration?
+    - What factors should take precedence when deciding on courses to register for?
+    - What should I give primary focus to during course registration?
+    - What are the key aspects I should prioritize when choosing courses to register?
+    - What should be my top concerns when I am registering for courses?
+    - What should I give the highest priority to when selecting courses for registration?
+    - What should I concentrate on primarily during the course registration process?
+    - What are the main things I should prioritize during course registration?
+    - What should be my main focus areas when registering for courses?
+    - What factors should I prioritize above all others when registering for courses?
+    - What should I emphasize as I make my choices during course registration?
+    - What are the crucial considerations I should prioritize during course registration?
+    - What should I place at the top of my list when registering for courses?
+    - What should take precedence when I am deciding on courses to register for?
+    - What are the main priorities I should have in mind when registering for courses?
+
+- intent: intent_final_year_retake_after_results
+  examples: |
+    - Can final-year students retake courses after their final examination results have been classified?
+    - Is it possible for final-year students to retake courses once their final exam results are graded?
+    - Can final-year students retake courses after their final exam results have been determined?
+    - Are final-year students allowed to retake courses after their final examination results have been classified?
+    - Can final-year students enroll in retake courses after receiving their final examination grades?
+    - Is it permissible for final-year students to retake courses following the classification of their final exam results?
+    - Are final-year students permitted to retake courses after their final examination outcomes are finalized?
+    - Can final-year students participate in retake courses once their final exam results are released?
+    - Is it allowed for final-year students to retake courses after the classification of their final examination results?
+    - Are final-year students eligible to retake courses subsequent to the classification of their final exam results?
+    - Can final-year students take retake courses after the classification of their final examination marks?
+    - Is it permissible for final-year students to retake courses after their final exam grades are determined?
+    - Are final-year students allowed to retake courses after the publication of their final examination results?
+    - Can final-year students register for retake courses after their final exam results have been categorized?
+    - Is it possible for final-year students to retake courses after their final examination results have been graded?
+    - Are final-year students able to retake courses after the assessment of their final examination results?
+    - Can final-year students sit for retake courses once their final exam results have been classified?
+    - Is it permissible for final-year students to enroll in retake courses after their final examination results are finalized?
+    - Are final-year students permitted to retake courses after their final exam results are finalized?
+    - Can final-year students retake courses after their final examination results have been finalized?
+    - Is it allowed for final-year students to retake courses following the classification of their final exam grades?
+    - Are final-year students eligible to retake courses after the determination of their final examination outcomes?
+    - Can final-year students participate in retake courses after their final examination results have been determined?
+    - Is it permissible for final-year students to retake courses after their final examination grades are finalized?
+    - Can final-year students take retake courses after their final examination results are finalized?
+    - Are final-year students allowed to retake courses once their final exam results are classified?
+    - Is it possible for final-year students to register for retake courses after their final examination results have been determined?
+    - Can final-year students retake courses after their final examination outcomes have been categorized?
+    - Are final-year students able to retake courses after their final examination results are determined?
+    - Is it permissible for final-year students to sit for retake courses after their final examination results have been graded?
+    - Can final-year students enroll in retake courses after their final examination results have been finalized?
+
+- intent: intent_academic_transcript_retake_indication
+  examples: |
+    - Will my academic transcript indicate if I've retaken a course?
+    - Does my academic transcript show if I've retaken a course?
+    - Will my academic record reflect that I've retaken a course?
+    - Is it noted on my transcript if I've retaken a course?
+    - Does my transcript indicate course retakes?
+    - How does my academic transcript show course retakes?
+    - Will my transcript mention that I've retaken specific courses?
+    - Do retaken courses appear on my academic transcript?
+    - Are retakes documented on my official transcript?
+    - How are course retakes recorded on my academic record?
+    - Does my transcript detail any courses I've retaken?
+    - Will my academic transcript note any retakes I've completed?
+    - Is there a record of retaken courses on my transcript?
+    - Does my official transcript reflect retaken courses?
+    - How does my transcript indicate retaken courses?
+    - Will my academic record show retaken courses?
+    - Are retake attempts noted on my transcript?
+    - Does my transcript list courses I've retaken?
+    - How are retakes documented on my academic transcript?
+    - Will my transcript show that I've repeated courses?
+    - Is there a section on my transcript for retaken courses?
+    - Does my academic record specify retake attempts?
+    - Will retaken courses be visible on my official transcript?
+    - Do course retakes show up on my academic transcript?
+    - Is there a notation for retaken courses on my transcript?
+    - How do retaken courses appear on my academic transcript?
+    - Will my transcript indicate if I've retaken any courses?
+    - Are retaken courses marked on my official transcript?
+    - Does my transcript mention if I've repeated any courses?
+    - How does my academic record handle retake course information?
+    - Will my transcript record show any courses I've attempted again?
+
+- intent: intent_exam_results_publication
+  examples: |
+    - When are examination results typically published?
+    - What is the usual timeframe for publishing examination results?
+    - When are examination results usually released?
+    - At what time are examination results typically announced?
+    - When can I expect the release of examination results?
+    - What is the standard schedule for publishing examination results?
+    - When do universities usually publish examination results?
+    - At what point are examination results generally made public?
+    - When do exam results usually come out?
+    - When are examination outcomes typically disclosed?
+    - What is the typical timeline for the publication of examination results?
+    - When are the usual dates for the release of examination results?
+    - At what stage are examination results commonly made available?
+    - When do institutions typically publish examination results?
+    - What is the customary period for the release of examination results?
+    - When do colleges usually announce examination results?
+    - When are examination outcomes traditionally unveiled?
+    - When are examination results typically declared?
+    - At what time do examination results generally become known?
+    - When are examination results usually revealed to students?
+    - What is the regular timing for the publication of examination results?
+    - When are examination results typically published by universities?
+    - At what point in the year do examination results usually come out?
+    - When do educational institutions typically publish their examination results?
+    - When are examination outcomes typically posted online?
+    - When do schools typically release their examination results?
+    - When are examination results usually posted on the official portal?
+    - What is the average timeline for the publication of examination outcomes?
+    - When are examination results generally available for viewing?
+    - At what stage in the academic calendar do examination results get released?
+    - When are examination results typically communicated to students?
+
+
+- intent: intent_access_exam_results
+  examples: |
+    - How can I access my examination results?
+    - How do I check my examination results?
+    - What is the process to view my examination results?
+    - How can I find out my examination results?
+    - Where do I go to access my examination results?
+    - What steps do I take to access my examination results?
+    - How do I retrieve my examination results?
+    - Where can I see my examination results?
+    - What do I need to do to see my examination results?
+    - How can I check my exam grades?
+    - What is the procedure for accessing my exam results?
+    - How do I get my exam results?
+    - Where can I get my exam results from?
+    - How do I view my results for the exams?
+    - What is the best way to see my examination results?
+    - Where do I find my examination results?
+    - How can I get my exam grades?
+    - What do I need to access my examination results?
+    - How can I check my results for the exams?
+    - Where do I check for my examination results?
+    - How do I access my exam scores?
+    - What is the easiest way to check my exam results?
+    - Where do I find out my exam results?
+    - How do I get my grades for the exams?
+    - What do I need to do to get my exam results?
+    - How can I find my exam results online?
+    - Where can I get my examination results online?
+    - What steps should I take to find my examination results?
+    - How do I access my final exam results?
+    - Where can I go to see my final exam results?
+    - What is the process to view my final exam results?
+  
+- intent: intent_exam_results_access_issue
+  examples: |
+    - What if I'm unable to access my results a week after publication?
+    - What should I do if I can't access my results one week after they are published?
+    - How should I proceed if I cannot view my results a week after they are released?
+    - What steps should I take if I am unable to access my results within a week of their publication?
+    - What can I do if I still can't see my results after one week of their release?
+    - What are my options if I am unable to access my results one week after they are made available?
+    - What should be my course of action if I'm unable to retrieve my results within a week of publication?
+    - How do I handle the situation if I can't access my results one week after they are published?
+    - What should I consider doing if I haven't been able to access my results after a week?
+    - What steps should I take if I am unable to access my results by the end of the first week after publication?
+    - What should I do if I haven't accessed my results a week after they were released?
+    - How can I address the issue of not being able to access my results within a week?
+    - What should I do if I'm unable to view my results after one week?
+    - What actions should I take if I still can't access my results after one week?
+    - How should I proceed if my results remain inaccessible one week after publication?
+    - What should I do if I am unable to retrieve my results within the expected timeframe?
+    - How do I address the situation if I'm unable to access my results within a week?
+    - What should I do if my results are not accessible one week after they are published?
+    - How can I resolve the issue of not being able to access my results after a week?
+    - What should I do if I can't access my results even after one week?
+    - How do I proceed if I haven't been able to access my results within the specified time frame?
+    - What steps should I take if my results are not available within a week of their publication?
+    - How should I proceed if my results are not accessible after the expected time?
+    - What should I do if I haven't been able to access my results within a week?
+    - How do I handle the situation if I still can't view my results after a week?
+    - What should I do if my results are not accessible within the expected timeframe?
+    - How should I address the issue of not being able to access my results within one week?
+    - What actions should I take if I am unable to access my results after one week?
+    - How do I proceed if my results remain unavailable one week after they are published?
+    - What should I consider doing if my results are still not accessible after one week?
+    - How can I resolve the problem of not being able to access my results within a week?
+

@@ -1,0 +1,198 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - intent_exam_warning
+  - intent_exam_consequence
+  - intent_exam_cheating_definition
+  - intent_exam_cheating_forms 
+  - intent_exam_notes_policy 
+  - intent_exam_electronic_device_policy 
+  - intent_exam_copying_consequence
+  - intent_exam_aiding_candidates
+  - intent_exam_cheating_punishment
+  - intent_cheating_serious_offence_reason
+  - intent_course_credit_earning
+  - intent_pass_mark_undergraduate
+  - intent_failed_assessment_credit
+  - intent_course_credit_determination
+  - intent_graduation_credit_requirement
+  - intent_fail_course_consequence
+  - intent_course_performance_assessment
+  - intent_missed_exam_procedure
+  - intent_deferred_exam_eligibility
+  - intent_exam_postponement_application
+  - intent_exam_postponement_application_timing
+  - intent_exam_postponement_illness_documentation
+  - intent_exam_postponement_other_documentation
+  - intent_postponed_exam_approval_without_regular_attendance
+  - intent_postponed_exam_approval_notification
+  - intent_postponed_exam_retake_status
+  - intent_missed_exam_fee
+  - intent_absent_exam_no_reason_consequence
+  - intent_fail_grade_CGPA_impact                                                                          
+  - intent_justifiable_absence_reason
+  - intent_abs_grade_CGPA_impact
+  - intent_exam_registration_requirement
+  - intent_unpaid_fees_consequence
+  - intent_partial_registration_exam_participation 
+  - intent_unregistered_exam_consequence
+  - intent_exam_worth_without_registration
+  - intent_course_completion_requirements
+  - intent_maximum_retake_courses
+  - intent_course_registration_prioritization 
+  - intent_final_year_retake_after_results
+  - intent_academic_transcript_retake_indication   
+  - intent_exam_results_publication 
+  - intent_access_exam_results
+  - intent_exam_results_access_issue                                                       #
+  
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_intent_exam_warning:
+  - text: "Students are strongly warned against any form of examination malpractices/irregularities."
+
+  utter_intent_exam_consequence:
+  - text: "It shall be an offence, and may lead to expulsion from the university."
+
+  utter_intent_exam_cheating_definition:
+  - text: "Any illegitimate behavior designed to deceive those setting, administering, and marking the assessment."
+
+  utter_intent_exam_cheating_forms:
+  - text: "Taking unauthorized materials into the exam, writing notes on oneself, accessing information on electronic equipment, copying from another student, and aiding or attempting to aid another candidate."
+
+  utter_intent_exam_notes_policy:
+  - text: "No, it is considered cheating."
+
+  utter_intent_exam_electronic_device_policy:
+  - text: "No, it is considered cheating."
+
+  utter_intent_exam_copying_consequence:
+  - text: "It is considered cheating and may lead to serious academic consequences."
+
+  utter_intent_exam_aiding_candidates:
+  - text: "No, it is considered cheating and may lead to serious academic consequences."
+
+  utter_intent_exam_cheating_punishment:
+  - text: "It may lead ultimately to expulsion from the university."
+
+  utter_intent_cheating_serious_offence_reason:
+  - text: "Because it undermines the integrity and validity of the assessment process."
+
+  utter_intent_course_credit_earning:
+  - text: "By obtaining at least 50% in each course they are assessed in."
+
+  utter_intent_pass_mark_undergraduate:
+  - text: "50%."
+
+  utter_intent_failed_assessment_credit:
+  - text: "No, credits are only earned if the student passes the assessment with at least 50%."
+
+  utter_intent_course_credit_determination:
+  - text: "By the student's performance in the assessment, with a minimum pass mark of 50%."
+
+  utter_intent_graduation_credit_requirement:
+  - text: "No, students must earn credits for all courses specified in their programme load to graduate."
+
+  utter_intent_fail_course_consequence:
+  - text: "The student will not earn credits for that course and may need to retake it."
+
+  utter_intent_course_performance_assessment:
+  - text: "Through assessments, with a minimum pass mark of 50% required to earn credits."
+
+  utter_intent_missed_exam_procedure:
+  - text: "You must inform the university and provide a credible reason for your absence."
+
+  utter_intent_deferred_exam_eligibility:
+  - text: "Yes, if you provide a credible reason and supporting documentation."
+
+  utter_intent_exam_postponement_application:
+  - text: "Your Dean's Offices."
+
+  utter_intent_exam_postponement_application_timing:
+  - text: "As soon as possible, but not later than the beginning of the semester in which the examination is scheduled."
+
+  utter_intent_exam_postponement_illness_documentation:
+  - text: "A University Health Centre Medical Statement Form."
+
+  utter_intent_exam_postponement_other_documentation:
+  - text: "Adequate documentation to substantiate the reason for absence."
+
+  utter_intent_postponed_exam_approval_without_regular_attendance:
+  - text: "No, you must have completed at least half of the assigned work to be eligible."
+
+  utter_intent_postponed_exam_approval_notification:
+  - text: "The Dean will inform the Head of Department responsible for the course."
+
+  utter_intent_postponed_exam_retake_status:
+  - text: "No, it will be considered a missed examination."
+
+  utter_intent_missed_exam_fee:
+  - text: "Yes, payment is normally made at the beginning of the semester."
+
+  utter_intent_absent_exam_no_reason_consequence:
+  - text: "They will receive a Fail (F) Grade for the course."
+
+  utter_intent_fail_grade_CGPA_impact:
+  - text: "It will be included in the calculation of the CGPA."
+
+  utter_intent_justifiable_absence_reason:
+  - text: "Sickness or loss of a parent/guardian."
+
+  utter_intent_abs_grade_CGPA_impact:
+  - text: "No, it does not."
+
+  utter_intent_exam_registration_requirement:
+  - text: "No, only registered students are permitted to sit for the examinations."
+
+  utter_intent_unpaid_fees_consequence:
+  - text: "ou won't be allowed to sit for the University examinations"
+
+  utter_intent_partial_registration_exam_participation:
+  - text: "No, you must be fully registered to sit for the examinations."
+
+  utter_intent_unregistered_exam_consequence:
+  - text: "Your examination results will be nullified."
+
+  utter_intent_exam_worth_without_registration:
+  - text: "No, it's not worth it since your results will be nullified."
+
+  utter_intent_course_completion_requirements:
+  - text: "Attend all lectures, satisfy coursework requirements, and sit for the university examination."
+
+  utter_intent_maximum_retake_courses:
+  - text: "No, the maximum number of retake courses allowed at a time is five."
+
+  utter_intent_course_registration_prioritization:
+  - text: "Register for retake courses first, then new courses, ensuring they fit into the approved normal load."
+
+  utter_intent_final_year_retake_after_results:
+  - text: "No, they are not permitted to retake any courses."
+
+  utter_intent_academic_transcript_retake_indication:
+  - text: "Yes, it will be indicated accordingly."
+
+  utter_intent_exam_results_publication:
+  - text: "Six weeks after the end of the semester final examination session."
+
+  utter_intent_access_exam_results:
+  - text: "You can access your exam results through the university ARMS website: https://arms.ndu.ac.ug/"
+
+  utter_intent_exam_results_access_issue:
+  - text: "Contact the Examination Coordinator for assistance."
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
