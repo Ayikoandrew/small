@@ -34,8 +34,7 @@ To run the chatbot locally, follow these steps:
    rasa shell
   **Usage**
 To run the chatbot with the Flask template, follow these steps:
-1. Start the chatbot
-2. Run the Flask App:
+1. Run the Flask App:
    ```sh
    flask --app app run
 
